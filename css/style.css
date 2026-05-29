@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -57,12 +57,8 @@ h1, h2, h3, .logo {
 }
 
 @keyframes logo-light-pass {
-    0% {
-        left: -120%;
-    }
-    100% {
-        left: 120%;
-    }
+    0% { left: -120%; }
+    100% { left: 120%; }
 }
 
 .nav-links {
@@ -95,6 +91,20 @@ h1, h2, h3, .logo {
     align-items: center;
     text-align: center;
     padding: 0 1rem;
+}
+
+.astronaut-icon {
+    font-size: 5rem;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    display: block;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
 }
 
 .hero-content h1 {
@@ -136,20 +146,11 @@ h1, h2, h3, .logo {
     gap: 4rem;
 }
 
-.dark-bg {
-    background-color: #1c2541;
-}
-
+.dark-bg { background-color: #1c2541; }
 .content-left { flex-direction: row; }
 .content-right { flex-direction: row-reverse; }
-
-.text-block {
-    flex: 1;
-}
-
-.image-block {
-    flex: 1;
-}
+.text-block { flex: 1; }
+.image-block { flex: 1; }
 
 .image-block img {
     width: 100%;
@@ -177,47 +178,12 @@ h1, h2, h3, .logo {
     text-transform: uppercase;
 }
 
-.text-block h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
-    color: #ffffff;
-}
-
-.text-block p {
-    color: #cbd5e1;
-    font-size: 1.05rem;
-    margin-bottom: 1.5rem;
-}
-
-.styled-list {
-    list-style: none;
-}
-
-.styled-list li {
-    margin-bottom: 0.8rem;
-    position: relative;
-    padding-left: 1.5rem;
-}
-
-.styled-list li::before {
-    position: absolute;
-    left: 0;
-    color: #4cc9f0;
-}
-
-.grid-targets {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.target-card {
-    background-color: rgba(11, 19, 43, 0.6);
-    padding: 1rem;
-    border-radius: 6px;
-    border-left: 4px solid #4cc9f0;
-}
+.text-block h2 { font-size: 2.2rem; margin-bottom: 1.5rem; color: #ffffff; }
+.text-block p { color: #cbd5e1; font-size: 1.05rem; margin-bottom: 1.5rem; }
+.styled-list { list-style: none; }
+.styled-list li { margin-bottom: 0.8rem; position: relative; padding-left: 1.5rem; }
+.grid-targets { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1rem; }
+.target-card { background-color: rgba(11, 19, 43, 0.6); padding: 1rem; border-radius: 6px; border-left: 4px solid #4cc9f0; }
 
 footer {
     background-color: #0b132b;
@@ -228,64 +194,15 @@ footer {
     color: #94a3b8;
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-}
-
-.team-info ul {
-    list-style: none;
-    margin-top: 0.5rem;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.team-info li {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
-}
-
-.team-info li:hover {
-    transform: translateY(-4px) scale(1.02);
-    background-color: rgba(76, 201, 240, 0.15);
-    color: #4cc9f0;
-    box-shadow: 0 10px 25px rgba(76, 201, 240, 0.15);
-}
+.footer-content { display: flex; flex-direction: column; gap: 1.5rem; align-items: center; }
+.team-info ul { list-style: none; margin-top: 0.5rem; display: flex; gap: 2rem; justify-content: center; }
+.team-info li { color: #ffffff; background: rgba(255, 255, 255, 0.05); padding: 0.4rem 1rem; border-radius: 20px; transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease; }
+.team-info li:hover { transform: translateY(-4px) scale(1.02); background-color: rgba(76, 201, 240, 0.15); color: #4cc9f0; box-shadow: 0 10px 25px rgba(76, 201, 240, 0.15); }
 
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-
-    .nav-links li {
-        margin: 0 0.5rem;
-    }
-
-    .section-container {
-        flex-direction: column !important;
-        padding: 3rem 5%;
-        gap: 2rem;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .team-info ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+    .navbar { flex-direction: column; gap: 1rem; }
+    .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+    .section-container { flex-direction: column !important; padding: 3rem 5%; gap: 2rem; }
+    .hero-content h1 { font-size: 2rem; }
+    .team-info ul { flex-direction: column; gap: 0.5rem; }
 }
