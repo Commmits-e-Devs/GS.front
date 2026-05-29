@@ -40,9 +40,13 @@
     <main>
         <section id="problema" class="section-container content-left">
             <div class="text-block">
-                <h1 class="section-badge">01. O Desafio</h1>
-                <h2>Lixo espacial</h2>
-                <p>paragrafo</p>
+                 <h1>01. O Desafio</h1>
+                <h1 class="section-badge">Pensamos nas seguintes Dores:</h1>
+                <p>
+                    <li>O acúmulo de lixo espacial e a consequente falta de espaço seguro nas órbitas de lançamento.</li>
+                    <li>O risco iminente de colisões entre satélites em operação e objetos não identificados (concorrentes ou detritos).</li>
+                    <li>A dificuldade em calcular a altitude e monitorar a densidade de satélites ativos nas diferentes camadas da órbita terrestre (LEO, MEO, GEO, HEO).</li>
+                </p>
             </div>
             <div class="image-block">
                 <img src="./Img/satelite.jpg" alt="Satelite sobrevoando a orbita terrestre com a luz do sol atraz">
@@ -54,21 +58,24 @@
                 <img src="./Img/photo-1541185933-ef5d8ed016c2.avif" alt="Satélite em órbita ou tecnologia espacial">
             </div>
             <div class="text-block">
-                <h1 class="section-badge">02. Inovação</h1>
-                <h2>Metodo contra impactos</h2>
-                <p>Pensamos em um mecanismo de crie um limite de espaço entre um satelite com os outros que</p>
+                <h2>02. Tecnologia</h2>
+                <h1 class="section-badge">O projeto utiliza uma base sólida de processamento lógico e matemático:</h1>
+                <p>
+                    <li>Linguagem de Programação: Todo o ecossistema é desenvolvido em Python, gerenciado por um menu interativo via terminal.</li>
+                    <li>Consumo de Dados em Tempo Real: Uso das bibliotecas urllib e ssl para baixar relatórios de telemetria reais (TLE - Two-Line Element) diretamente de um servidor espelho no GitHub.</li>
+                    <li>Simulação Estocástica: Utilização da biblioteca random para popular matrizes espaciais com lixo espacial aleatório e simular encontros de radar com satélites concorrentes.</li>
+                </p>
             </div>
         </section>
 
         <section id="objetivos" class="section-container content-left">
             <div class="text-block">
-                <h1 class="section-badge">03. Metas</h1>
-                <h2>metas</h2>
-                <p>Nossos principais objetivos:</p>
+                <h2>03. Metas</h2>
+                <h1 class="section-badge">Os principais objetivos do sistema são:</h1>
                 <ul class="styled-list">
-                    <li>1.</li>
-                    <li>2.</li>
-                    <li>3.</li>
+                <li>1. Mapeamento: Processar listas de dados TLE para contar e classificar automaticamente a distribuição atual de satélites pelo espaço.</li>
+                <li>2. Lançamento Seguro: Encontrar "vagas" livres em uma matriz espacial e alocar novos satélites de maneira segura, abortando a missão caso haja detritos na zona de perigo.</li>
+                <li>3. Gerenciamento Anticolisão: Monitorar a frota ativa e executar protocolos automatizados de evasão ou manobras de aceleração de Hohmann (mudança de órbita) para preservar o equipamento.</li>
                 </ul>
             </div>
             <div class="image-block">
@@ -81,26 +88,25 @@
                 <img src="" alt="">
             </div>
             <div class="text-block">
+                <h2>Público-Alvo</h2>
                 <h1 class="section-badge">04. Impacto</h1>
-                <h2>alguma coisa</h2>
-                <p>paragrafos</p>
+                
                 <div class="grid-targets">
-                    <div class="target-card"><strong></strong></div>
-                    <div class="target-card"><strong></strong></div>
-                    <div class="target-card"><strong></strong></div>
+                    <div class="target-card"><strong>O software foi desenhado para impactar diretamente agências e operadores espaciais que gerenciam frotas de satélites e precisam mantê-los operantes em órbitas com alta densidade de objetos. Além disso, a solução atende engenheiros aeroespaciais responsáveis por calcular a viabilidade e a segurança do lançamento de novos projetos, como o "Satélite FIAP" ou "DEVS". Por fim, o sistema também é voltado para analistas de tráfego espacial que necessitam de relatórios atualizados sobre a ocupação geral das órbitas da Terra.</strong></div>
+                    
                 </div>
             </div>
         </section>
 
         <section id="beneficios" class="section-container content-left">
             <div class="text-block">
-                <h1 class="section-badge">05. Vantagens</h1>
-                <h2>titulo</h2>
-                <p>paragrafo</p>
+                <h2>Benefícios</h2>
+                <h1 class="section-badge">05. Nosso Diferencial</h1>
+
                 <ul class="styled-list">
-                    <li><strong>lista 1</strong></li>
-                    <li><strong>lista 2</strong></li>
-                    <li><strong>lista 3</strong></li>
+                    <li><strong>Segurança Patrimonial: Evita a perda de equipamentos caríssimos por meio de monitoramento constante de radar (com limite de segurança de 15 km).</strong></li>
+                    <li><strong>Otimização de Recursos: O cálculo preciso do combustível (Delta-V) garante que o satélite gaste o mínimo possível para subir, circularizar a órbita e descer de volta à segurança após a ameaça passar.</strong></li>
+                    <li><strong>Consciência Situacional: Transforma dados TLE brutos e ilegíveis em relatórios gerenciais claros, dividindo as frotas em suas respectivas altitudes.</strong></li>
                 </ul>
             </div>
             <div class="image-block">
@@ -113,9 +119,13 @@
                 <img src="" alt="">
             </div>
             <div class="text-block">
+                <h2>Dia a Dia</h2>
                 <h1 class="section-badge">06. Prática</h1>
-                <h2>não sei o que por</h2>
-                <p>paragrafo</p>
+                <p>
+                    <li>Pela manhã, um operador abre o terminal e extrai o relatório TLE para entender como está o congestionamento espacial.</li>
+                    <li>Ao planejar o envio de uma nova carga, o engenheiro roda a simulação de lançamento. O sistema espalha o lixo espacial detectado e varre os ângulos; se a rota escolhida cruzar com um detrito, o sistema aborta e recomenda um novo ângulo, impedindo um desastre.</li>
+                    <li>Em caso de alerta de colisão, o sistema desvia o satélite temporariamente (tentando elevações de 20km, 40km ou 60km) para evitar o obstáculo, aguarda sua passagem e, em seguida, retorna o equipamento com segurança para a órbita original.</li>
+                </p>
             </div>
         </section>
     </main>
