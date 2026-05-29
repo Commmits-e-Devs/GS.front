@@ -146,7 +146,7 @@ h1, h2, h3, .logo {
     gap: 4rem;
 }
 
-.dark-bg { background-color: #1c2541; }
+.dark-bg { background-color: #1c2541; box-shadow: 1px 1px 30px #24245B; }
 .content-left { flex-direction: row; }
 .content-right { flex-direction: row-reverse; }
 .text-block { flex: 1; }
